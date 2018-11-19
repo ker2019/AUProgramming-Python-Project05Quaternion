@@ -122,3 +122,15 @@ class Quaternion:
 
 	def __rtruediv__(self, other):
 		return self.__rmul__(other.__reversed__())
+
+u = Quaternion(1 + 6j)
+v = Quaternion([-12, 4, 7, -1])
+
+print(u)
+print(v)
+print(u + v)
+print(u - v)
+print(u * v)
+print(v * u)
+print(u / v)
+print(abs(u))
